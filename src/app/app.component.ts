@@ -4,7 +4,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MatIconRegistry} from '@angular/material/icon'
 import { DomSanitizer } from '@angular/platform-browser';
-
+// import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -22,6 +22,7 @@ export class AppComponent {
     {name:'app-icon',path:'assets/images/app.svg'},
     {name:'logo',path:'assets/images/logo.svg'},
     {name:'down-icon',path:'assets/images/down.svg'},
+    {name:'welcome-icon',path:'assets/images/welcome.svg'},
   ]
   constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
     this.iconConfigs.forEach(icon => this.registerIcon(icon.name,icon.path))

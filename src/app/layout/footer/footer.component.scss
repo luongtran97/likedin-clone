@@ -1,7 +1,10 @@
 footer {
   background-color: var(--color-footer);
-  width: 100vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
   position: relative;
+  width: 100vw;
   left: calc(-50vw + 50%);
   .main_footer {
     display: flex;

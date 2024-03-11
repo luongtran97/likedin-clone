@@ -54,36 +54,19 @@
     </div>
     <div class="selection_right">
       <ul class="selection_right--list">
-        <p class="header&quot;">SUGGESTED SEARCHES</p>
-        <li>
-          <a href="">Marketing</a>
+        <p class="header">SUGGESTED SEARCHES</p>
+        <ng-container *ngFor="let item of items; let i = index">
+          <li *ngIf="!showMore || i < showCount">
+            <a href="">{{ item }}</a>
+          </li>
+        </ng-container>
+        <li class="showAll" *ngIf="showMore">
+          <button (click)="toggleShowMore()">Show more</button>
+          <mat-icon svgIcon="up-icon"></mat-icon>
         </li>
-        <li>
-          <a href="">Public Adminstration</a>
-        </li>
-        <li>
-          <a href="">Healthcare</a>
-        </li>
-        <li>
-          <a href="">Engineering</a>
-        </li>
-        <li>
-          <a href="">IT Services</a>
-        </li>
-        <li>
-          <a href="">Sustainability</a>
-        </li>
-        <li>
-          <a href="">Business Adminstration</a>
-        </li>
-        <li>
-          <a href="">TeleComunications</a>
-        </li>
-        <li>
-          <a href="">HR Management</a>
-        </li>
-        <li class="showAll">
-          <a href="">Show all</a>
+        <li class="showAll" *ngIf="!showMore && items.length > showCount">
+          <button (click)="toggleShowMore()">Show less</button>
+          <mat-icon svgIcon="down-icon"></mat-icon>
         </li>
       </ul>
     </div>

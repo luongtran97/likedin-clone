@@ -24,6 +24,7 @@ export class AppComponent {
     {name:'down-icon',path:'assets/images/down.svg'},
     {name:'welcome-icon',path:'assets/images/welcome.svg'},
     {name:'google-icon',path:'assets/images/google.svg'},
+    {name:'up-icon',path:'assets/images/up-icon.svg'},
   ]
   constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
     this.iconConfigs.forEach(icon => this.registerIcon(icon.name,icon.path))

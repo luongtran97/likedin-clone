@@ -1,0 +1,24 @@
+<div class="mt-5">
+  <div class="selection">
+    <div class="selection_left">
+      <p class="selection_left--title">Discover the best software tools</p>
+      <p class="selection_left--content">
+        Connect with buyers who have first-hand <br />experience to find the
+        best products for you.
+      </p>
+    </div>
+    <div class="selection_right">
+      <ul class="selection_right--list">
+        <p class="header">SUGGESTED TOOLS</p>
+        <ng-container *ngFor="let item of items">
+          <li>
+            <a href="">{{ item }}</a>
+          </li>
+        </ng-container>
+        <li class="showAll">
+          <button>Show more</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

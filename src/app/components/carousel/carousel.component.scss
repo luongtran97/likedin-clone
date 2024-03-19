@@ -4,6 +4,7 @@
   left: calc(-50vw + 50%);
   position: relative;
   padding: 40px 0;
+  overflow-x: hidden;
   .carousel-control-next-icon, .carousel-control-prev-icon {
     height: min-content;
     min-height: 32px;

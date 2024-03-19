@@ -1,0 +1,65 @@
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .connect_left {
+    width: 50%;
+    .connect_left-img {
+      width: 312px;
+    }
+    .connect_left-title {
+      color: var(--color-text);
+      font-size: 48px;
+      font-weight: 200;
+    }
+    button {
+      border: 1px solid #000;
+      border-radius: 24px;
+      padding: 12px 24px;
+      background-color: #fff;
+      transition: all 0.5s;
+      font-weight: 500;
+      &:hover {
+        background-color: var(--color-button-gray-hover);
+      }
+    }
+  }
+  .connect_right {
+    width: 50%;
+    .connect_right-img {
+      width: 312px;
+    }
+    .connect_right-title {
+      color: var(--color-text);
+      font-size: 48px;
+      font-weight: 200;
+    }
+  }
+  .dropdown {
+    .dropdown-toggle{
+      width: 50%;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #000;
+      text-align: left;
+      padding: 16px 12px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .dropdown-menu {
+      width: 50%;
+      height: 350px;
+      overflow-y: auto;
+      .dropdown-item {
+        overflow-y: auto;
+        font-weight: 500;
+        .dropdown-item-course {
+          display: block;
+          font-size: 16px;
+          font-weight: 400;
+          color: rgba(0,0,0,0.6);
+        }
+      }
+    }
+  }
+}
